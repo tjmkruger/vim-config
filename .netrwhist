@@ -1,4 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/Users/tjkruger/src/driven/d2k/web/public/stylesheets/style.css'
 let g:netrw_dirhist_2='/Users/tjkruger/src/driven/ds.com/_layouts'
+let g:netrw_dirhist_3='/Users/tjkruger/src/rms/ContractAccounting'
+let g:netrw_dirhist_4='/Users/tjkruger/src/rms/Tools/ServerConfig/spec/rmsdevserver'
+let g:netrw_dirhist_5='/Users/tjkruger/.vim'
