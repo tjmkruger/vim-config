@@ -5,10 +5,16 @@ execute pathogen#infect()
 :set clipboard=unnamed
 
 " Leader mapping {{{
-:let mapleader = ","							" Default is \
-inoremap jk <esc>								" jk is esc
-nnoremap <leader>u :GundoToggle<CR>				" toggle gundo
-nnoremap <leader>t :NERDTreeToggle<CR>			" toggle nerdtree
+:let mapleader = ","															" Default is \
+inoremap jk <esc>																" jk is esc
+nnoremap <leader>u :GundoToggle<CR>												" toggle gundo
+nnoremap <leader>t :NERDTreeToggle<CR>											" toggle nerdtree
+autocmd FileType javascript nnoremap <leader>f :call JsBeautify()<CR>			" JS CSS and HTML formatting
+autocmd FileType html nnoremap <leader>f :call JsBeautify()<CR>					" JS CSS and HTML formatting
+autocmd FileType css nnoremap <leader>f :call JsBeautify()<CR>					" JS CSS and HTML formatting
+autocmd FileType javascript vnoremap <leader>f :call RangeJsBeautify()<CR>		" JS CSS and HTML formatting
+autocmd FileType html vnoremap <leader>f :call RangeJsBeautify()<CR>			" JS CSS and HTML formatting
+autocmd FileType css vnoremap <leader>f :call RangeJsBeautify()<CR>				" JS CSS and HTML formatting
 " }}}
 
 " UI Config {{{
